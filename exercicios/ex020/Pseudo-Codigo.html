@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Codigo</title>
+    <style>
+           /*
+            SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children (filho)
+        */
+        /*  a:hover(passar o mouse) DEVE vim depois a:link(não visitado) e a:visited(link visitado) na CSS definição parfa ter efeito e a:active(link selecionado) DEVE vim depois de a:hover*/
+        div{
+            display: inline-block;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black ;
+            border-radius: 20px; 
+            background-color: aquamarine;
+        }
+        div:hover{
+            background-color: white;
+        }
+        /* div#uma{
+            background-color: rgb(198, 198, 198);
+        }
+        div#dois{
+            background-color: rgb(147, 24, 24);
+        }
+        div#tres{
+            background-color: blueviolet;
+        } */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 2px;
+            border-bottom: solid 2px rgb(43, 44, 46);
+            font:bold 20px Arial;
+            background-color: rgb(224, 134, 134);
+        }
+        li{
+            display: inline;
+            background-color: rgb(226, 171, 171);
+            border-radius: 1px;
+            margin: 10px;
+            padding: auto;
+        }
+        a:link{
+            color:blue;
+        }
+        a:visited{
+            color: rgb(128, 0, 0);
+        }
+        a:hover{
+            color:white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id ="uma">01</div>
+    <div id  ="dois">02</div>
+    <div id  ="tres">03</div>
+    <p>Display a list of links as a horizontal menu:</p>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+           /*
+            SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class-> modo, estado, iteração com o user
+            :: = pseudo-element-> fixo, sem iteração insere elemento antes ou depois, estiliza primeira linha ou letra
+            >  = children (filho)-> indica que o elemneto a ser estilizado é filho daquele bloco. ex tem varios h1 mas o h1 filho da div no css fica div>h1{...} ou div.nomeDaClass>h1{...}
+        */
+        /*  a:hover(passar o mouse) DEVE vim depois a:link(não visitado) e a:visited(link visitado) na CSS definição parfa ter efeito e a:active(link selecionado) DEVE vim depois de a:hover*/
+        body{
+            font: 10px Arial;
+        }
+        
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color:darkred;
+        }
+        a:hover{
+            color:black;
+            text-decoration: underline;
+        }
+        a:active{
+            color:yellow;
+        }
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links
+        <ul>
+            <li><a href="" target="_blank">Repositorio GitHub</a></li>
+            <li> <a href="" target="_blank">Canal do Yt</a></li>
+            <li><a href="" target="_blank">Site do Cursi</a></li>
+           <!-- target="_blank" usando para quando o link for clicado abrir uma nova aba não substituir a que esta aberta -->
+        </ul>
+    </h1>
+</body>
+</html>

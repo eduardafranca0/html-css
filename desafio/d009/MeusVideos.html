@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Videos</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        /*
+       Aprendendo grid
+       */
+        .link-imagens {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /*define a quantidade de coluna; podendo ser auto fit, fr, %*/
+            /*
+           ----grid-template-columns: repeat(2, minmax(250px, 1fr));---
+           tambem pode ser assim== 2 colunas nunca menor que '250px' nunca “explode” em telas grandes
+           */
+            gap: 10px;
+            /*espaco entre os itens*/
+            max-width: 600px;
+            /*largura maxima da grid*/
+            margin: auto;
+        }
+
+        .link-imagens a {
+            display: block;
+            /*o link passa ocupar toda celula do grid já que link é INLINE, a area clicável vira o carde inteiro*/
+        }
+
+        .link-imagens img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            /*Sempre que definir largura e altura de uma imagem no grid usar OBJECT-FIT*/
+            border-radius: 5px;
+        }
+
+        @media(max-width:600px) {
+
+            /*para na tela de ~600px virar apenas uma coluna */
+            .link-imagens {
+                grid-template-columns: 1fr;
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Videos legais para assistir</h1>
+        <div class="link-imagens">
+            <a href="htmlcss.html"><img src="imagem/thumb-html.png" alt="Video Historia da Internet"></a>
+            <a href="hardware.html"><img src="imagem/thumb-hardware.png" alt="Video sobre Hardware"></a>
+            <a href="python.html"><img src="imagem/thumb-python.png" alt="Vídeo sobre Python"></a>
+            <a href="js.html"><img src="imagem/thumb-js.png" alt="Vídeo sobre JavaScript"></a>
+        </div>
+    </div>
+</body>
+
+</html>

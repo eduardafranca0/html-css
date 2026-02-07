@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(240, 183, 76);
+            margin: 0px;
+        }
+        header{
+            background-color: rgb(255, 255, 255);padding: 5px;
+            margin:10px;
+        }
+        
+        nav {
+            padding: 3px;
+            background-color: rgb(194, 128, 7);
+            margin-bottom: 0;
+           box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            display: inline;
+            margin-right: 30px;
+        }
+        a{
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+        
+        a:link{
+            color: white;
+        }
+        a:visited{
+            color: bisque;
+        }
+        a:hover{
+            color: blue;
+            text-decoration-line: underline;
+        }
+        a:focus{
+            color: blueviolet;
+        }
+        
+        main{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px 0px;
+        }
+        article{
+            background-color: rgba(211, 211, 211, 0.527);
+        }
+        article>aside{
+            background-color: rgb(141, 139, 139);
+            font-style: italic;
+        }
+        footer{
+            background-color: rgb(194, 128, 7);
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+        footer>p{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o BR</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum quos quasi necessitatibus in maiores distinctio odio voluptatibus ullam minima nesciunt praesentium, modi dolore iure ea quis ducimus repudiandae officia optio!</p>
+                <aside>Esse é o aside</aside>
+            </article>
+            <article>
+                <h2>Noticias sobre o PY</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic similique harum dignissimos quam cum aut explicabo vero aspernatur odit provident cupiditate omnis molestiae, incidunt ab delectus impedit porro vitae placeat.</p>
+                <aside>feito por Joao</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Maria Eduarda</p>
+    </footer>
+</body>
+</html>
